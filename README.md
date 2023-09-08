@@ -1,5 +1,6 @@
 # Heart Disease Prediction Flask App
 
+![](/images/HeardiseasePrediction.png)
 ##Overview
 This is a Flask web application for predicting the likelihood of heart disease in patients based on a subset of the heart disease dataset. The application uses machine learning (Logistic Regression) to make predictions based on three key features: age, serum cholesterol level (chol), and resting blood pressure (trestbps).
 
