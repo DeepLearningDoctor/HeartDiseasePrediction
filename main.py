@@ -52,11 +52,12 @@ def predict():
     prob = model.predict_proba(input_arr)
     print('type:', type(prediction), 'prediction:', prediction,'prob:',prob)
 
-    if prob[0][0]>=prob[0][1]:
-        output = f"You have high probability of having  heart disease, prob:{prob}"
+    if prob[0][0] >= prob[0][1]:
+        return render_template('heartDiseaseForm.html', pred=f"You have high probability of having  heart disease")
+        # output = f"You have high probability of having  heart disease, prob:{prob}"
     else:
-        output = f"Relax.You probably don't have heart disease,prob{prob}"
-    return output
+        return render_template('heartDiseaseForm.html', pred=f"Relax.You probably don't have heart disease")
+        # output = f"Relax.You probably don't have heart disease,prob{prob}"
 
 
 if __name__ == '__main__':
