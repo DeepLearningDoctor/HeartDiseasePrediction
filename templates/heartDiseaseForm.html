@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Heart Disease Prediction</title>
+
+</head>
+<body>
+
+  <div class="container1" id="index-banner">
+    <div class="container2">
+      <br><br>
+      <h1 class="header-text">Heart Disease Prediction</h1>
+      <div class="row center">
+        <h5 class="header-subtext">Predict if you have heart disease or not
+        <br>
+        </h5>
+      </div>
+
+      <div class="row">
+<!--          form sends data to predictpage to process-->
+    <form action='/predictpage' method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field1">
+            <label><b>Age (in years)</b></label>
+            <br>
+          <input   id="first_name" name='Age'type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label><b>Cholestrol (in mg/dL) </b></label>
+            <br>
+          <input id="last_name"  name="cholestrol" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label><b>Resting Blood Pressure (in mmHg) </b></label>
+            <br>
+          <input id="_name" name="Resting BP" type="text" class="validate">
+
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+<!--        Two ways to create a button like interface-->
+<!--        <input type="submit" value="Predict Probability">-->
+          <br>
+          <button type="submit">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      <br><h4 align="center"><b>{{pred}}</b></h4>
+        <br>
+
+    </div>
+  </div>
+
+  </body>
