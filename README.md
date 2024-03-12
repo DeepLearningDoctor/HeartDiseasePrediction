@@ -7,8 +7,8 @@ This is a Flask web application for predicting the likelihood of heart disease i
 **Dataset:**
 The dataset used in this project is a subset of the Kaggle heart disease dataset , containing 14 features. For this Flask app, we are specifically focusing on the following three features:
 
-Age: Age of the patient in years.\n
-Chol: Serum cholesterol level in mg/dl.\n
+Age: Age of the patient in years.  
+Chol: Serum cholesterol level in mg/dl.  
 Trestbps: Resting blood pressure(mean arterial pressure) in mm Hg on admission to the hospital.
 
 **Installation**
